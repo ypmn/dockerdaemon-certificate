@@ -1,12 +1,12 @@
     DOCKER DEAMON ACTIVATION PROCESS :
 
 
-    # These commands get run inside of your VM.
+  ### These commands get run inside of your VM ###
 
-    # Create the directory to store the configuration file.
+#### Create the directory to store the configuration file ####
     sudo mkdir -p /etc/systemd/system/docker.service.d
 
-    # Create a new file to store the daemon options.
+#### Create a new file to store the daemon options  ####
     sudo vi /etc/systemd/system/docker.service.d/options.conf
 
     # Now make it look like this and save the file when you're done:
