@@ -13,13 +13,13 @@
     [Service]
     ExecStart=
     ExecStart=/usr/bin/dockerd -H unix:// -H tcp://0.0.0.0:2375   
-#### above command stats that , we are in open mode here we need to build security by generating the certificates ####
-  and need to set tha path 
+#### Above command stats that , we are in open mode here we need to build security by generating the certificates ####
+####    and need to set tha path   #### 
 
-    # Reload the systemd daemon.
+#### Reload the systemd daemon ####
     sudo systemctl daemon-reload
 
-    # Restart Docker.
+#### Restart Docker  ####
     sudo systemctl restart docker
     --------------------------------------------------------------------------------------------------------------
     CERTIFICATES FOR DEAMON SECUITY :
