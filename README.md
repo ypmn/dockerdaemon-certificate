@@ -9,12 +9,12 @@
 #### Create a new file to store the daemon options  ####
     sudo vi /etc/systemd/system/docker.service.d/options.conf
 
-    # Now make it look like this and save the file when you're done:
+#### Now make it look like this and save the file when you're done ####
     [Service]
     ExecStart=
     ExecStart=/usr/bin/dockerd -H unix:// -H tcp://0.0.0.0:2375   
-    # above command stats that , we are in open mode here we need to build security by generating the certificates
-    and need to set tha path.
+#### above command stats that , we are in open mode here we need to build security by generating the certificates ####
+  and need to set tha path 
 
     # Reload the systemd daemon.
     sudo systemctl daemon-reload
